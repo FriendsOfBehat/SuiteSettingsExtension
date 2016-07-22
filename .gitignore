@@ -1,0 +1,4 @@
+/vendor
+
+/behat.yml.dist
+/composer.lock
