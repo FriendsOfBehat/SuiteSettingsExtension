@@ -30,4 +30,19 @@ default:
  - `paths` - an array, contains locations where Behat looks for `*.feature` files
  - `contexts` - an array, if there are no custom ones in suite configured, these are used
 
+#### Protip!
 
+If you've changed your `paths`, that they do not contain `features` anymore, your contexts
+may be not loaded properly. To ensure this, pass the same folder to built-in `autoloader` extension:
+
+```yaml
+default:
+    # ...
+    autoload:
+        - "%paths.base%/custom_features/bootstrap" # features -> custom_features
+    
+    extensions:
+        FriendsOfBehat\SuiteSettingsExtension:
+            paths:
+                - "custom_features"
+```
