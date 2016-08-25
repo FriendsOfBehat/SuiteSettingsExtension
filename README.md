@@ -5,23 +5,23 @@ Allows to overwrite suites' default settings.
 ## Usage
 
 1. Install it:
-
-```bash
-$ composer require friends-of-behat/suite-settings-extension --dev
-```
+    
+    ```bash
+    $ composer require friends-of-behat/suite-settings-extension --dev
+    ```
 
 2. Enable and configure default suite settings in your Behat configuration:
-
-```yaml
-default:
-    # ...
-    extensions:
-        FriendsOfBehat\SuiteSettingsExtension: # the default configuration:
-            paths:
-                - "features" # default one!
-            contexts:
-                - "FeatureContext" # default one!
-```
+    
+    ```yaml
+    default:
+        # ...
+        extensions:
+            FriendsOfBehat\SuiteSettingsExtension: # the default configuration:
+                paths:
+                    - "features" # default one!
+                contexts:
+                    - "FeatureContext" # default one!
+    ```
 
 3. Every suite you create will have those settings as the default ones.
 
