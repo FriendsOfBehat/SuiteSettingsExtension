@@ -1,10 +1,5 @@
 default:
-    autoload:
-        - "%paths.base%/custom_features/bootstrap"
-
-    extensions:
-        FriendsOfBehat\SuiteSettingsExtension:
-            paths:
-                - "custom_features"
+    suites:
+        default:
             contexts:
-                - "CustomFeatureContext"
+                - FriendsOfBehat\TestContext\Context\TestContext
