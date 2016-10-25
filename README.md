@@ -13,6 +13,7 @@ Allows to overwrite suites' default settings.
 2. Enable and configure default suite settings in your Behat configuration:
     
     ```yaml
+    # behat.yml
     default:
         # ...
         extensions:
@@ -36,6 +37,7 @@ If you've changed your `paths`, that they do not contain `features` anymore, you
 may be not loaded properly. To ensure this, pass the same folder to built-in `autoloader` extension:
 
 ```yaml
+# behat.yml
 default:
     # ...
     autoload:
