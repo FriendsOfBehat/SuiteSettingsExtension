@@ -16,9 +16,6 @@ use Behat\Testwork\ServiceContainer\ExtensionManager;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
-/**
- * @author Kamil Kokot <kamil@kokot.me>
- */
 final class SuiteSettingsExtension implements Extension
 {
     /**
