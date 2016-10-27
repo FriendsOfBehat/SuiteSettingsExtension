@@ -31,7 +31,6 @@ final class SuiteSettingsExtension implements Extension
      */
     public function initialize(ExtensionManager $extensionManager)
     {
-
     }
 
     /**
@@ -64,6 +63,5 @@ final class SuiteSettingsExtension implements Extension
      */
     public function process(ContainerBuilder $container)
     {
-
     }
 }
