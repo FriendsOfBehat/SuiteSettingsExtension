@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of the SuiteSettingsExtension package.
  *
@@ -21,7 +23,7 @@ final class SuiteSettingsExtension implements Extension
     /**
      * {@inheritdoc}
      */
-    public function getConfigKey()
+    public function getConfigKey(): string
     {
         return 'fob_suite_settings';
     }
@@ -29,14 +31,14 @@ final class SuiteSettingsExtension implements Extension
     /**
      * {@inheritdoc}
      */
-    public function initialize(ExtensionManager $extensionManager)
+    public function initialize(ExtensionManager $extensionManager): void
     {
     }
 
     /**
      * {@inheritdoc}
      */
-    public function configure(ArrayNodeDefinition $builder)
+    public function configure(ArrayNodeDefinition $builder): void
     {
         $builder
             ->validate()
@@ -50,7 +52,7 @@ final class SuiteSettingsExtension implements Extension
     /**
      * {@inheritdoc}
      */
-    public function load(ContainerBuilder $container, array $config)
+    public function load(ContainerBuilder $container, array $config): void
     {
         $container->setParameter('suite.generic.default_settings', array_merge(
             $container->getParameter('suite.generic.default_settings'),
@@ -61,7 +63,7 @@ final class SuiteSettingsExtension implements Extension
     /**
      * {@inheritdoc}
      */
-    public function process(ContainerBuilder $container)
+    public function process(ContainerBuilder $container): void
     {
     }
 }
