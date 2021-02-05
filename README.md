@@ -1,13 +1,13 @@
 # Suite Settings Extension [![License](https://img.shields.io/packagist/l/friends-of-behat/suite-settings-extension.svg)](https://packagist.org/packages/friends-of-behat/suite-settings-extension) [![Version](https://img.shields.io/packagist/v/friends-of-behat/suite-settings-extension.svg)](https://packagist.org/packages/friends-of-behat/suite-settings-extension) [![Build status on Linux](https://img.shields.io/travis/FriendsOfBehat/SuiteSettingsExtension/master.svg)](http://travis-ci.org/FriendsOfBehat/SuiteSettingsExtension) [![Scrutinizer Quality Score](https://img.shields.io/scrutinizer/g/FriendsOfBehat/SuiteSettingsExtension.svg)](https://scrutinizer-ci.com/g/FriendsOfBehat/SuiteSettingsExtension/)
 
-Allows to overwrite suites' default settings.
+Allows overwriting suites' default settings.
 
 ## Usage
 
 1. Install it:
     
     ```bash
-    $ composer require friends-of-behat/suite-settings-extension --dev
+    composer require friends-of-behat/suite-settings-extension --dev
     ```
 
 2. Enable and configure default suite settings in your Behat configuration:

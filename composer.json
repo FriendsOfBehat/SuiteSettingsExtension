@@ -6,18 +6,19 @@
         {
             "name": "Kamil Kokot",
             "email": "kamil@kokot.me",
-            "homepage": "http://kamil.kokot.me"
+            "homepage": "https://kamilkokot.com"
         }
     ],
     "require": {
-        "php": "^7.1",
-
-        "behat/behat": "^3.1"
+        "php": "^7.4 || ^8.0",
+        "behat/behat": "^3.8"
     },
     "require-dev": {
         "friends-of-behat/test-context": "^1.0"
     },
     "autoload": {
-        "psr-4": { "FriendsOfBehat\\SuiteSettingsExtension\\": "src/" }
+        "psr-4": {
+            "FriendsOfBehat\\SuiteSettingsExtension\\": "src/"
+        }
     }
 }
